@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MMBobur/news_website_2.git"
+    "url": "git+https://github.com/Dostonbek2000/news_backend_nodejs.git"
   },
   "keywords": [
     "nodejs",
@@ -22,9 +22,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MMBobur/news_website_2/issues"
+    "url": "https://github.com/Dostonbek2000/news_backend_nodejs/issues"
   },
-  "homepage": "https://github.com/MMBobur/news_website_2#readme",
+  "homepage": "https://github.com/Dostonbek2000/news_backend_nodejs#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
