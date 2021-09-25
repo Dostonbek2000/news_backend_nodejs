@@ -10,12 +10,14 @@ const Controller = require('./user.controller');
 router.route('/auth').post(validate(Validator.auth), Controller.auth);
 
 
-router.use(authenticate);
 
 
-router.use(permit('admin'));
 router.route('/').post(validate(Validator.addNew), Controller.create);
 router.route('/').get( Controller.findAll);
+
+
+router.use(authenticate);
+router.use(permit('admin'));
 router.route('/published').get( Controller.findAllPublished);
 router.route('/:id').get(Controller.findOne);
 router.route('/:id').put(validate(Validator.updateOne),Controller.update);
