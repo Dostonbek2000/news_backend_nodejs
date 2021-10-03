@@ -1,2 +1,3 @@
-# news_website_2
-# i think it is more beautiful without token
+# news_website
+# Created and depended on MERN 
+# sequelize 

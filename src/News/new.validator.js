@@ -7,7 +7,7 @@ module.exports = {
             title: Joi.string().required(),
             text: Joi.string().required(),
             author: Joi.string().required(),
-            date: Joi.date().required(),
+            date: Joi.string().required(),
             image: Joi.string().required(),
 
 
@@ -20,7 +20,7 @@ module.exports = {
             title: Joi.string().required(),
             text: Joi.string().required(),
             author: Joi.string().required(),
-            date: Joi.date().required(),
+            date: Joi.string().required(),
             image: Joi.string().required(),
             active: Joi.boolean().default(true)
         }
@@ -35,7 +35,7 @@ module.exports = {
             title: Joi.string().required(),
             text: Joi.string().required(),
             author: Joi.string().required(),
-            date: Joi.date().required(),
+            date: Joi.string().required(),
             image: Joi.string().required(),
            
         }

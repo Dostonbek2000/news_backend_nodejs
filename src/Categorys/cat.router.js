@@ -5,6 +5,7 @@ const Validator = require('./catvalidator');
 const Controller = require('./catcontroller');
 
 router.route('/').get(Controller.findAll);
+router.route('/num').get(Controller.findCategoryNumber);
 router.route('/').post(validate(Validator.addNew),Controller.create);
 router.route('/:id').get(Controller.findOne);
 router.route('/:id').put(validate(Validator.updateOne),Controller.update);

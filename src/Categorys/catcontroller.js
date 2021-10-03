@@ -26,6 +26,20 @@ exports.create = (req, res) => {
         });
 }
 
+exports.findCategoryNumber = (req, res) => {
+
+    Category.sequelize.query("Select (select name from categories WHERE id=news.cat_id) as name, (select color from categories WHERE id=news.cat_id) as color ,count(*) as nums from news group by cat_id;")
+        .then(data => {
+            res.send(data)
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:  'some err while retrieving categories',
+                
+            });
+        });
+};
+
 exports.findAll = (req, res) => {
     const title = req.query.title;
     var condition = title ? { title: { [Op.like]: `%${title}` } } : null;
